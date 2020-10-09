@@ -8,5 +8,9 @@ public class ocTable
     public string ocTableMeta { get; set; }
     public string ocTableAppointment { get; set; }
     public string confID { get; set; }
-    public List<ocField> Fields { get; set; }
+    public List<ocField> fields { get; set; }
+    public ocTable()
+    {
+        fields = new List<ocField>();
+    }
 }
